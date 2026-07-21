@@ -26,13 +26,14 @@ Recommend one tendency after the report type is chosen, but require confirmation
 
 ## Visual rules
 
-- Keep titles concise and conclusion-oriented.
+- Keep titles concise, natural, and topic-led by default. Do not use prompt-like, slogan-like, or presentation-strategy sentences as titles; move those statements into the body or speaker notes.
 - Make the main takeaway visible without reading speaker notes.
 - Use Chinese labels in diagrams and charts unless an official name must remain unchanged.
 - Do not fabricate decorative data, plots, citations, or icons that imply evidence.
 - Preserve figure aspect ratios and legibility.
 - Avoid tiny body text, excessive borders, dense full-slide tables, and uncontrolled color proliferation.
 - Include section dividers for multi-project reports.
+- Insert a visible chapter transition before each project rather than switching directly between technical slides.
 - Keep projects visually consistent but structurally separate.
 
 ## Required QA
@@ -45,15 +46,17 @@ Render every slide and inspect at full size. Check:
 4. research-facing wording preserves the evidence boundary between established observations, preliminary results, planned work, unperformed experiments, and unresolved uncertainty without requiring developer-facing status codes on slides;
 5. every material workflow or formula change has before, after, rationale, core difference, and impact;
 6. Chinese terminology and first-use bilingual expansion follow the content rules;
-7. formulas are legible, notation-consistent, and correctly highlighted;
+7. formulas use proper mathematical typesetting, remain legible and notation-consistent, and correctly render subscripts, superscripts, fractions, norms, traces, transposes, and Greek symbols without raw programmer-style underscores;
 8. speaker notes exist on every substantive slide when the approved format supports them; otherwise the pre-approved limitation and agreed substitute are recorded;
 9. no text, shape, image, or chart overflows the canvas;
 10. no empty placeholders, clipped text, accidental overlaps, or unreadable labels remain;
 11. no third-party template branding remains;
 12. layouts show appropriate variation without losing visual consistency;
-13. files are saved to the agreed output location and existing decks remain untouched.
-14. the evidence map contains one row for every slide, uses all required columns, and gives accurate task locators and local artifact paths;
-15. the QA report contains every required check with an explicit `PASS`, `FAIL`, or `NOT RUN` result.
+13. slide titles are concise topic labels or natural scientific titles, and presenter-oriented framing has been moved to body text or speaker notes;
+14. every project in a multi-project deck begins with a clear chapter transition or divider;
+15. files are saved to the agreed output location and existing decks remain untouched.
+16. the evidence map contains one row for every slide, uses all required columns, and gives accurate task locators and local artifact paths;
+17. the QA report contains every required check with an explicit `PASS`, `FAIL`, or `NOT RUN` result.
 
 ## QA report format
 

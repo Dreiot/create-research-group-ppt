@@ -84,7 +84,9 @@ Every project chapter should default to:
 
 For multiple projects, use:
 
-`封面 → 目录 → 项目 A → 项目 B → … → 本期总结与待讨论问题`
+`封面 → 目录 → 项目 A 章节过渡 → 项目 A → 项目 B 章节过渡 → 项目 B → … → 本期总结与待讨论问题`
+
+Use concise, natural topic titles for ordinary group-meeting slides. Prefer titles such as `研究动机`, `实验设置`, `阶段性结果`, or a precise method name. Move presenter-like summary sentences, rhetorical framing, and generated-sounding phrases into the slide body or speaker notes. Avoid titles such as `用三条主线回答……`, `三条主线采用同一套研究叙事`, or other complete sentences that describe how the deck was constructed.
 
 Do not start PPT production until the user approves both the fact/evidence summary and the slide-by-slide outline.
 
@@ -115,6 +117,10 @@ After approval, give the selected production path the following source packet wi
 - the required output paths.
 
 Require a fully editable 16:9 presentation in the approved format, Chinese academic terminology, full-slide rendering, full-size visual inspection, and revision of visual defects before delivery. Require concise speaker notes on every substantive slide when the selected format supports notes. If it does not, disclose that limitation and obtain approval before production; do not silently omit the notes.
+
+For multiple projects, require a brief chapter divider or an equally explicit visual transition before each new project. Keep the divider simple: project name plus one neutral research-focus subtitle is usually enough.
+
+Render mathematical expressions as mathematics, not programmer-style text. Prefer editable equation objects when the production path supports them reliably. Otherwise use high-resolution LaTeX/MathJax vector output and retain the source expression in the production files or notes. Never present core equations with raw underscores, improvised Unicode spacing, or flattened superscripts when correct subscripts, fractions, norms, traces, transposes, and Greek symbols are available.
 
 Keep internal provenance, review, and validation details in the evidence map or QA report unless they are explicitly part of the approved slide outline. Do not let implementation bookkeeping displace the research question, experiment design, observations, or next-stage plan.
 
