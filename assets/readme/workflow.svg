@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence-grounded presentation workflow</title>
+  <desc id="desc">Six steps from scoped Codex tasks through fact approval, outline approval, production, rendering, and delivery.</desc>
+  <rect width="1200" height="430" rx="26" fill="#102A3D"/>
+  <text x="58" y="58" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="30" font-weight="760">从对话材料到可讲述的研究汇报</text>
+  <text x="58" y="88" fill="#BBD0DD" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.4">SCOPE → EVIDENCE → APPROVAL → PRODUCTION → QA → DELIVERY</text>
+
+  <path d="M108 174H1092" stroke="#426174" stroke-width="3"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif">
+    <g transform="translate(58 128)">
+      <circle cx="50" cy="46" r="23" fill="#145A93" stroke="#86B3D5" stroke-width="2"/>
+      <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">01</text>
+      <text x="0" y="106" fill="#FFFFFF" font-size="18" font-weight="700">限定材料范围</text>
+      <text x="0" y="132" fill="#AFC3CF" font-size="14">项目、日期与任务</text>
+    </g>
+    <g transform="translate(246 128)">
+      <circle cx="50" cy="46" r="23" fill="#1C756C" stroke="#91C8C0" stroke-width="2"/>
+      <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">02</text>
+      <text x="0" y="106" fill="#FFFFFF" font-size="18" font-weight="700">建立事实台账</text>
+      <text x="0" y="132" fill="#AFC3CF" font-size="14">证据、冲突与边界</text>
+    </g>
+    <g transform="translate(434 128)">
+      <circle cx="50" cy="46" r="23" fill="#D97706" stroke="#F1C38B" stroke-width="2"/>
+      <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">03</text>
+      <text x="0" y="106" fill="#FFFFFF" font-size="18" font-weight="700">确认事实与大纲</text>
+      <text x="0" y="132" fill="#AFC3CF" font-size="14">生成前的内容门槛</text>
+    </g>
+    <g transform="translate(622 128)">
+      <circle cx="50" cy="46" r="23" fill="#145A93" stroke="#86B3D5" stroke-width="2"/>
+      <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">04</text>
+      <text x="0" y="106" fill="#FFFFFF" font-size="18" font-weight="700">选择制作路径</text>
+      <text x="0" y="132" fill="#AFC3CF" font-size="14">PPT Agent 或其他工具</text>
+    </g>
+    <g transform="translate(810 128)">
+      <circle cx="50" cy="46" r="23" fill="#1C756C" stroke="#91C8C0" stroke-width="2"/>
+      <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">05</text>
+      <text x="0" y="106" fill="#FFFFFF" font-size="18" font-weight="700">逐页渲染验收</text>
+      <text x="0" y="132" fill="#AFC3CF" font-size="14">公式、备注与溢出</text>
+    </g>
+    <g transform="translate(998 128)">
+      <circle cx="50" cy="46" r="23" fill="#D97706" stroke="#F1C38B" stroke-width="2"/>
+      <text x="50" y="52" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">06</text>
+      <text x="0" y="106" fill="#FFFFFF" font-size="18" font-weight="700">只交付成品</text>
+      <text x="0" y="132" fill="#AFC3CF" font-size="14">默认仅保留 PPTX</text>
+    </g>
+  </g>
+
+  <g transform="translate(58 324)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">
+    <rect width="210" height="44" rx="12" fill="#EAF5F2"/>
+    <text x="105" y="28" text-anchor="middle" fill="#1C756C">FACTS BEFORE SLIDES</text>
+    <rect x="228" width="210" height="44" rx="12" fill="#E9F1F8"/>
+    <text x="333" y="28" text-anchor="middle" fill="#145A93">CHINESE RESEARCH STORY</text>
+    <rect x="456" width="210" height="44" rx="12" fill="#FFF2E2"/>
+    <text x="561" y="28" text-anchor="middle" fill="#A75800">FORMULA ASPECT SAFE</text>
+    <rect x="684" width="210" height="44" rx="12" fill="#EAF5F2"/>
+    <text x="789" y="28" text-anchor="middle" fill="#1C756C">PROJECT DIVIDERS</text>
+    <rect x="912" width="210" height="44" rx="12" fill="#E9F1F8"/>
+    <text x="1017" y="28" text-anchor="middle" fill="#145A93">EDITABLE OUTPUT</text>
+  </g>
+</svg>

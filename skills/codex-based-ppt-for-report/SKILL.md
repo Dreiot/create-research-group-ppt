@@ -1,9 +1,9 @@
 ---
-name: create-research-group-ppt
+name: codex-based-ppt-for-report
 description: Create evidence-grounded, editable Chinese research group meeting presentations from user-selected Codex project conversations and explicitly referenced local project artifacts. Use for biweekly research updates, method and experiment plans, reviewer-response presentations, milestone summaries, multi-project group meetings, or revisions to an existing group-meeting deck when Codex must select tasks by project and time range, confirm the factual basis before production, distinguish verified progress from plans, explain workflow or formula changes before versus after, obtain outline approval, disclose and use an appropriate presentation-production path, and deliver only the requested PPTX by default or an explicitly requested offline HTML.
 ---
 
-# Create Research Group Meeting PPT
+# Codex-Based PPT for Report
 
 Create a defensible presentation from selected Codex task history. Keep content approval separate from visual production. Do not treat plans, hypotheses, or unverified agent claims as completed research.
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex-Based PPT for Report"
+  short_description: "从 Codex 项目对话制作有事实依据的中文研究汇报 PPT"
+  default_prompt: "Use $codex-based-ppt-for-report to create an evidence-grounded research report presentation from selected Codex project conversations."

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Codex-Based PPT for Report</title>
+  <desc id="desc">A research presentation workflow that turns selected Codex conversations into evidence-grounded editable slides.</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#DCE5EE" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FBFE"/>
+      <stop offset="1" stop-color="#EEF5FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" rx="28" fill="#F7F9FC"/>
+  <rect width="1200" height="400" rx="28" fill="url(#grid)" opacity="0.52"/>
+  <rect x="32" y="32" width="1136" height="336" rx="22" fill="url(#soft)" stroke="#C8D5E2"/>
+
+  <g transform="translate(72 66)">
+    <text x="0" y="18" fill="#145A93" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" font-weight="700" letter-spacing="2.6">CODEX CONVERSATIONS → RESEARCH REPORT</text>
+    <text x="0" y="94" fill="#172231" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="55" font-weight="760">Codex-Based PPT</text>
+    <text x="0" y="154" fill="#172231" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="55" font-weight="760">for Report</text>
+    <rect x="0" y="180" width="54" height="5" rx="2.5" fill="#D97706"/>
+    <text x="0" y="222" fill="#526273" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="20">从确认过的项目对话，到有事实依据的中文研究汇报</text>
+    <g transform="translate(0 250)">
+      <rect width="124" height="30" rx="15" fill="#145A93"/>
+      <text x="62" y="20" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">EDITABLE PPTX</text>
+      <rect x="136" width="122" height="30" rx="15" fill="#DDEFEA"/>
+      <text x="197" y="20" text-anchor="middle" fill="#1C756C" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">FACT FIRST</text>
+      <rect x="270" width="134" height="30" rx="15" fill="#F7E7D2"/>
+      <text x="337" y="20" text-anchor="middle" fill="#A75800" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700">FORMULA SAFE</text>
+    </g>
+  </g>
+
+  <g transform="translate(675 38)">
+    <path d="M44 46H390M44 128H390M44 210H390" stroke="#BFCEDB" stroke-width="2" stroke-dasharray="5 7"/>
+    <g>
+      <rect x="0" y="10" width="196" height="72" rx="15" fill="#FFFFFF" stroke="#B9C9D8"/>
+      <circle cx="32" cy="46" r="14" fill="#145A93"/>
+      <text x="32" y="51" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="13" font-weight="700">01</text>
+      <text x="58" y="40" fill="#172231" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" font-weight="700">选择 Codex 任务</text>
+      <text x="58" y="62" fill="#6A7886" font-family="Segoe UI, PingFang SC, sans-serif" font-size="13">项目 · 日期 · 对话范围</text>
+    </g>
+    <g transform="translate(242 92)">
+      <rect x="0" y="0" width="196" height="72" rx="15" fill="#EAF5F2" stroke="#A6CEC7"/>
+      <circle cx="32" cy="36" r="14" fill="#1C756C"/>
+      <text x="32" y="41" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="13" font-weight="700">02</text>
+      <text x="58" y="30" fill="#172231" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" font-weight="700">确认事实依据</text>
+      <text x="58" y="52" fill="#58736F" font-family="Segoe UI, PingFang SC, sans-serif" font-size="13">结论 · 冲突 · 适用边界</text>
+    </g>
+    <g transform="translate(0 174)">
+      <rect x="0" y="0" width="196" height="72" rx="15" fill="#FFF7ED" stroke="#E7C69D"/>
+      <circle cx="32" cy="36" r="14" fill="#D97706"/>
+      <text x="32" y="41" text-anchor="middle" fill="#FFFFFF" font-family="ui-monospace, monospace" font-size="13" font-weight="700">03</text>
+      <text x="58" y="30" fill="#172231" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" font-weight="700">批准逐页大纲</text>
+      <text x="58" y="52" fill="#7D6A55" font-family="Segoe UI, PingFang SC, sans-serif" font-size="13">方向 · 实验 · 认识 · 计划</text>
+    </g>
+    <g transform="translate(242 256)">
+      <rect x="0" y="0" width="196" height="72" rx="15" fill="#102A3D"/>
+      <circle cx="32" cy="36" r="14" fill="#FFFFFF"/>
+      <text x="32" y="41" text-anchor="middle" fill="#102A3D" font-family="ui-monospace, monospace" font-size="13" font-weight="700">04</text>
+      <text x="58" y="30" fill="#FFFFFF" font-family="Segoe UI, PingFang SC, sans-serif" font-size="17" font-weight="700">生成并验收 PPTX</text>
+      <text x="58" y="52" fill="#B9CDD9" font-family="Segoe UI, PingFang SC, sans-serif" font-size="11.5">可编辑 · 可讲述 · 公式可靠</text>
+    </g>
+    <path d="M196 46C242 46 220 128 242 128M242 128C220 128 220 210 196 210M196 210C242 210 220 292 242 292" fill="none" stroke="#145A93" stroke-width="3"/>
+    <circle cx="218" cy="87" r="4" fill="#145A93"/>
+    <circle cx="218" cy="169" r="4" fill="#1C756C"/>
+    <circle cx="218" cy="251" r="4" fill="#D97706"/>
+  </g>
+</svg>

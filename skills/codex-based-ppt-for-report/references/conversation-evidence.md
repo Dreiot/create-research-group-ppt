@@ -38,7 +38,7 @@ Follow paths explicitly mentioned in confirmed tasks when necessary to reproduce
 
 Hide operational noise from slides by default: absolute paths, temporary commands, proxy settings, internal task numbers, and routine tool chatter. Retain versions, commits, seeds, datasets, configurations, failure gates, and validation results when they affect research credibility.
 
-## Evidence map format
+## Transient evidence map format
 
 Create one row per slide:
 
@@ -46,3 +46,5 @@ Create one row per slide:
 |---|---|---|---|---|---|
 
 Use project name, task title or ID, and message date as the Codex locator. Record exact local artifact paths when used. If a slide contains only navigation or section framing, label it accordingly rather than inventing evidence.
+
+Keep this map as an internal temporary record by default. Persist or deliver it only when the user explicitly requests an evidence map.

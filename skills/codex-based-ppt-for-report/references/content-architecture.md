@@ -35,7 +35,7 @@ By default, omit developer-facing details from the main deck:
 - development Gates, internal stage identifiers, and workflow bookkeeping;
 - CI logs and exhaustive test-count inventories.
 
-Retain these details in the evidence map or QA report. Show them on slides only when the user requests them, the presentation is specifically about review or engineering governance, or the detail is essential to explain why a result can or cannot be trusted.
+Retain these details in the transient evidence ledger or internal QA record. Persist those records only when the user requests them. Show the details on slides only when the user requests them, the presentation is specifically about review or engineering governance, or the detail is essential to explain why a result can or cannot be trusted.
 
 Do not confuse simplification with overclaiming. Replace internal status labels with research-facing boundary statements supported by evidence, for example:
 
@@ -118,4 +118,4 @@ Add concise notes to every substantive slide when the approved presentation form
 
 Do not hide essential evidence only in notes.
 
-If the approved format cannot store speaker notes, disclose the limitation before production, obtain the user's approval, and record the agreed substitute in the QA report. Do not silently omit notes.
+If the approved format cannot store speaker notes, disclose the limitation before production, obtain the user's approval, and record the agreed substitute in the internal QA record. Persist that record only when requested. Do not silently omit notes.
