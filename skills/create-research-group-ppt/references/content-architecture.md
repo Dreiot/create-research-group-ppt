@@ -4,7 +4,7 @@
 
 ### 双周研究进展
 
-Emphasize completed work, direct evidence, changes since the last report, blockers, and the next two-week plan.
+Emphasize the research direction, why the method or workflow changed, how experiments were organized, what can currently be concluded, what remains scientifically uncertain, and the next two-week plan. Keep routine development bookkeeping out of the main narrative unless it changes the scientific interpretation.
 
 ### 论文方法与实验方案
 
@@ -21,6 +21,35 @@ Emphasize milestone goals, accumulated verified outcomes, remaining gaps, decisi
 ### 自定义类型
 
 Derive a structure from the user's stated purpose while preserving evidence states and change explanations.
+
+## Audience-facing research narrative
+
+Maintain a detailed evidence ledger during preparation, but do not reproduce it mechanically on slides. For ordinary research updates, translate provenance and implementation state into a concise narrative:
+
+`研究方向 → 修改内容与依据 → 实验组织 → 当前观察与认识 → 适用边界 → 下一阶段工作`
+
+By default, omit developer-facing details from the main deck:
+
+- commit hashes, branch names, and exact diff ranges;
+- review-verdict codes and implementation-candidate labels;
+- development Gates, internal stage identifiers, and workflow bookkeeping;
+- CI logs and exhaustive test-count inventories.
+
+Retain these details in the evidence map or QA report. Show them on slides only when the user requests them, the presentation is specifically about review or engineering governance, or the detail is essential to explain why a result can or cannot be trusted.
+
+Do not confuse simplification with overclaiming. Replace internal status labels with research-facing boundary statements supported by evidence, for example:
+
+- `当前为单数据集、单种子的阶段性观察`;
+- `正式外部实验尚未开展`;
+- `现有结果用于验证流程一致性，不用于证明性能优越性`;
+- `该结论仍需更多数据集、随机种子或对照实验验证`.
+
+For multi-project progress reports, keep each project as a separate top-level chapter and give each chapter the same four audience questions:
+
+1. 当前研究方向是什么？
+2. 实验或方法为什么这样调整，具体如何组织？
+3. 目前观察到了什么，能够和不能够得出什么结论？
+4. 下一阶段准备做什么？
 
 ## Mandatory change analysis
 

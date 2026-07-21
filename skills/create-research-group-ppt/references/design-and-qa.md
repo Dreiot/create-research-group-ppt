@@ -42,7 +42,7 @@ Render every slide and inspect at full size. Check:
 1. the approved presentation artifact opens successfully and remains editable: `.pptx` by default, or offline `.html` when explicitly requested;
 2. slide count and order match the approved outline;
 3. every substantive claim maps to the evidence ledger;
-4. status wording distinguishes verified, implemented, planned, blocked, rejected, and uncertain work;
+4. research-facing wording preserves the evidence boundary between established observations, preliminary results, planned work, unperformed experiments, and unresolved uncertainty without requiring developer-facing status codes on slides;
 5. every material workflow or formula change has before, after, rationale, core difference, and impact;
 6. Chinese terminology and first-use bilingual expansion follow the content rules;
 7. formulas are legible, notation-consistent, and correctly highlighted;

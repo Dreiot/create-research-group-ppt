@@ -70,9 +70,17 @@ Read [references/content-architecture.md](references/content-architecture.md). P
 
 Estimate length from speaking time rather than filling a fixed page quota. Use roughly one slide per minute only as a starting point; allocate more time and fewer slides for formulas, mechanism diagrams, and before-after explanations.
 
+For research-progress and milestone presentations, keep the evidence ledger as an internal verification layer. Translate it into an audience-facing research narrative centered on:
+
+`研究方向 → 方法或流程如何调整 → 实验如何组织 → 当前观察与认识 → 下一阶段工作`
+
+Do not place developer-facing state in the main deck by default, including commit hashes, branch names, review verdict codes, implementation candidates, development Gates, CI details, or exhaustive test counts. Include such material only when the user asks for it, when the report type is explicitly about review or engineering governance, or when omitting it would materially misrepresent the research.
+
+Preserve scientifically meaningful uncertainty even when development metadata is omitted. Use concise research-facing wording such as `单数据集阶段性观察`, `尚未开展正式实验`, `仍需更多种子验证`, or `当前结果不足以支持优越性结论` when supported by the evidence.
+
 Every project chapter should default to:
 
-`本期目标 → 完成事项与证据 → 流程/公式改动前后 → 当前问题 → 下一步计划`
+`研究方向 → 流程/公式改动前后及依据 → 实验组织 → 当前结论与适用边界 → 下一步计划`
 
 For multiple projects, use:
 
@@ -107,6 +115,8 @@ After approval, give the selected production path the following source packet wi
 - the required output paths.
 
 Require a fully editable 16:9 presentation in the approved format, Chinese academic terminology, full-slide rendering, full-size visual inspection, and revision of visual defects before delivery. Require concise speaker notes on every substantive slide when the selected format supports notes. If it does not, disclose that limitation and obtain approval before production; do not silently omit the notes.
+
+Keep internal provenance, review, and validation details in the evidence map or QA report unless they are explicitly part of the approved slide outline. Do not let implementation bookkeeping displace the research question, experiment design, observations, or next-stage plan.
 
 The design must vary with content. Keep the approved white, dark-gray, restrained-deep-blue baseline, but do not repeat one table/card layout across the deck. Prefer diagrams, plots, experimental figures, and formula explanations when they communicate the evidence better. Do not retain third-party template branding such as `Made with GAMMA`.
 
