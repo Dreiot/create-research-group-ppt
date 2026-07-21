@@ -47,17 +47,18 @@ Render every slide and inspect at full size. Check:
 5. every material workflow or formula change has before, after, rationale, core difference, and impact;
 6. Chinese terminology and first-use bilingual expansion follow the content rules;
 7. formulas use proper mathematical typesetting, remain legible and notation-consistent, and correctly render subscripts, superscripts, fractions, norms, traces, transposes, and Greek symbols without raw programmer-style underscores;
-8. speaker notes exist on every substantive slide when the approved format supports them; otherwise the pre-approved limitation and agreed substitute are recorded;
-9. no text, shape, image, or chart overflows the canvas;
-10. no empty placeholders, clipped text, accidental overlaps, or unreadable labels remain;
-11. no third-party template branding remains;
-12. layouts show appropriate variation without losing visual consistency;
-13. slide titles are concise topic labels or natural scientific titles, and presenter-oriented framing has been moved to body text or speaker notes;
-14. every project in a multi-project deck begins with a clear chapter transition or divider;
-15. files are saved to the agreed output location and existing decks remain untouched.
-16. the evidence map contains one row for every slide, uses all required columns, and gives accurate task locators and local artifact paths;
-17. the QA report contains every required check with an explicit `PASS`, `FAIL`, or `NOT RUN` result.
+8. every formula preserves its natural aspect ratio: SVG formulas use `preserveAspectRatio="xMidYMid meet"`, are fitted with one uniform scale derived from the `viewBox`, and have no more than 1% relative difference between the natural and displayed aspect ratios;
+9. formula-heavy slides have been visually checked at full size for stretching, clipping, blur, font substitution, and misplaced subscripts or superscripts;
+10. speaker notes exist on every substantive slide when the approved format supports them; otherwise the pre-approved limitation and agreed substitute are recorded;
+11. no text, shape, image, or chart overflows the canvas;
+12. no empty placeholders, clipped text, accidental overlaps, or unreadable labels remain;
+13. no third-party template branding remains;
+14. layouts show appropriate variation without losing visual consistency;
+15. slide titles are concise topic labels or natural scientific titles, and presenter-oriented framing has been moved to body text or speaker notes;
+16. every project in a multi-project deck begins with a clear chapter transition or divider;
+17. the final presentation is saved to the agreed output location and existing decks remain untouched unless overwrite permission was explicit;
+18. the default final output location contains only the requested presentation artifact; evidence maps, QA reports, renderings, source projects, and inspection data are absent unless explicitly requested.
 
-## QA report format
+## Internal QA record
 
-Record each check as `PASS`, `FAIL`, or `NOT RUN`. For `FAIL`, state the defect and whether it was fixed. For `NOT RUN`, state why and name any substitute inspection. Do not convert substitute evidence into a false pass.
+Record each check internally as `PASS`, `FAIL`, or `NOT RUN`. For `FAIL`, state the defect and whether it was fixed. For `NOT RUN`, state why and name any substitute inspection. Do not convert substitute evidence into a false pass. Keep this record transient by default and persist it only when the user explicitly requests a QA report.

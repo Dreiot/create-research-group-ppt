@@ -1,6 +1,6 @@
 ---
 name: create-research-group-ppt
-description: Create evidence-traceable, editable Chinese research group meeting presentations from user-selected Codex project conversations and explicitly referenced local project artifacts. Use for biweekly research updates, method and experiment plans, reviewer-response presentations, milestone summaries, multi-project group meetings, or revisions to an existing group-meeting deck when Codex must select tasks by project and time range, distinguish verified progress from plans, explain workflow or formula changes before versus after, obtain outline approval, disclose and use an appropriate presentation-production path, and deliver a default PPTX or explicitly requested offline HTML with an evidence map and QA report.
+description: Create evidence-grounded, editable Chinese research group meeting presentations from user-selected Codex project conversations and explicitly referenced local project artifacts. Use for biweekly research updates, method and experiment plans, reviewer-response presentations, milestone summaries, multi-project group meetings, or revisions to an existing group-meeting deck when Codex must select tasks by project and time range, confirm the factual basis before production, distinguish verified progress from plans, explain workflow or formula changes before versus after, obtain outline approval, disclose and use an appropriate presentation-production path, and deliver only the requested PPTX by default or an explicitly requested offline HTML.
 ---
 
 # Create Research Group Meeting PPT
@@ -15,7 +15,8 @@ Create a defensible presentation from selected Codex task history. Keep content 
 - Never overwrite an existing deck unless the user explicitly requests it.
 - Require user approval of the evidence summary and slide-by-slide outline before producing the deck.
 - Explicitly disclose the final presentation-production path before using it. It may be a `ppt-agent`, built-in presentation tooling, `oil-ppt`, or a clearly described custom workflow.
-- Deliver an editable `.pptx` by default, or an offline editable `.html` when the user explicitly requests HTML, plus a page-to-evidence map and a QA report. Keep previews and source projects as internal artifacts unless requested.
+- Confirm the factual basis before presentation production. Keep the evidence ledger available during production and QA, but do not use production as a substitute for unresolved evidence decisions.
+- Deliver only an editable `.pptx` by default, or only an offline editable `.html` when the user explicitly requests HTML. Do not persist evidence maps, QA reports, rendered previews, source projects, inspection dumps, or other supporting artifacts unless the user explicitly requests them.
 
 ## Workflow
 
@@ -32,7 +33,7 @@ Ask one compact set of startup questions covering only decisions that cannot be 
    - 阶段成果总结与下一步安排
    - 自定义类型
 4. State the expected speaking duration.
-5. Confirm a report name and output directory when they cannot be safely inferred from context. Use editable `.pptx` by default; accept offline editable `.html` when explicitly requested.
+5. Confirm a report type and output directory when they cannot be safely inferred from context. Use editable `.pptx` by default; accept offline editable `.html` when explicitly requested. Unless the user specifies another convention, name the final file `<YYYY-MM-DD>_<汇报类型>.pptx` or `.html`.
 
 List candidate Codex tasks within the selected projects and dates. Let the user confirm which tasks to include before reading their full content. For multiple projects, preserve each project as a separate top-level chapter; do not explain relationships or rank priorities unless requested.
 
@@ -58,6 +59,8 @@ For every candidate claim, record:
 - whether it changes a workflow, objective function, formula, method, or experiment plan.
 
 Prefer newer verified evidence over older state, but never silently discard conflicts. Surface material conflicts and ask the user to resolve any conflict that changes the central narrative.
+
+Treat this ledger as a transient internal working record by default. Establish it before generation, use it to approve the facts and audit the deck, and do not save it in the final output directory unless explicitly requested.
 
 ### 3. Prepare content for approval
 
@@ -88,7 +91,7 @@ For multiple projects, use:
 
 Use concise, natural topic titles for ordinary group-meeting slides. Prefer titles such as `研究动机`, `实验设置`, `阶段性结果`, or a precise method name. Move presenter-like summary sentences, rhetorical framing, and generated-sounding phrases into the slide body or speaker notes. Avoid titles such as `用三条主线回答……`, `三条主线采用同一套研究叙事`, or other complete sentences that describe how the deck was constructed.
 
-Do not start PPT production until the user approves both the fact/evidence summary and the slide-by-slide outline.
+Do not start PPT production until the user approves both the fact/evidence summary and the slide-by-slide outline. Resolve central factual conflicts, unsupported conclusions, and material uncertainty before generation; do not defer these decisions to the production or QA stage.
 
 ### 4. Select and disclose the production path
 
@@ -122,7 +125,9 @@ For multiple projects, require a brief chapter divider or an equally explicit vi
 
 Render mathematical expressions as mathematics, not programmer-style text. Prefer editable equation objects when the production path supports them reliably. Otherwise use high-resolution LaTeX/MathJax vector output and retain the source expression in the production files or notes. Never present core equations with raw underscores, improvised Unicode spacing, or flattened superscripts when correct subscripts, fractions, norms, traces, transposes, and Greek symbols are available.
 
-Keep internal provenance, review, and validation details in the evidence map or QA report unless they are explicitly part of the approved slide outline. Do not let implementation bookkeeping displace the research question, experiment design, observations, or next-stage plan.
+Preserve every formula's natural aspect ratio. For SVG formulas, include `preserveAspectRatio="xMidYMid meet"`, parse the SVG `viewBox`, compute one uniform scale with `min(slotWidth / viewBoxWidth, slotHeight / viewBoxHeight)`, and center the resulting object in its allotted slot. Never stretch a formula by independently forcing both its width and height to the slot dimensions. After export, compare the formula's natural aspect ratio with its displayed object frame and require at most 1% relative error, then visually inspect every formula-heavy slide for stretching, clipping, blur, font substitution, and misplaced subscripts or superscripts.
+
+Keep internal provenance, review, and validation details in the transient evidence ledger or internal QA record unless they are explicitly part of the approved slide outline. Persist those records only when requested. Do not let implementation bookkeeping displace the research question, experiment design, observations, or next-stage plan.
 
 The design must vary with content. Keep the approved white, dark-gray, restrained-deep-blue baseline, but do not repeat one table/card layout across the deck. Prefer diagrams, plots, experimental figures, and formula explanations when they communicate the evidence better. Do not retain third-party template branding such as `Made with GAMMA`.
 
@@ -130,12 +135,12 @@ The design must vary with content. Keep the approved white, dark-gray, restraine
 
 Independently verify the production outputs against the approved outline and evidence ledger. Require all checks in [references/design-and-qa.md](references/design-and-qa.md).
 
-Deliver exactly these default artifacts:
+Perform the full audit even though supporting records are not default deliverables. Keep the evidence ledger, renderings, inspection output, and QA results in an operating-system temporary directory or another clearly separated staging area. Remove those temporary artifacts after successful verification and before handoff when safe to do so.
 
-- `<report-name>.pptx`
-- `<report-name>-evidence-map.md`
-- `<report-name>-qa.md`
+Deliver exactly one default artifact:
 
-When the user explicitly selects offline HTML, replace only the first artifact with `<report-name>.html` and adapt format-specific QA accordingly.
+- `<YYYY-MM-DD>_<汇报类型>.pptx`
+
+When the user explicitly selects offline HTML, deliver only `<YYYY-MM-DD>_<汇报类型>.html` and adapt format-specific QA accordingly. Persist an evidence map, QA report, rendered slides, editable source project, or inspection data only when the user explicitly requests that artifact.
 
 Report any check that did not run and the substitute evidence used. Never describe a skipped check as passed.
